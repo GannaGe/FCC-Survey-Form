@@ -1,0 +1,119 @@
+body {
+    display: block;
+    font-family: monospace;
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    color: #ffffff;
+    background-color: rgb(8, 45, 149);
+    background-color: #004f8c;
+    background-image:         url("https://www.transparenttextures.com/patterns/brick-wall.png");
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 2em auto;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    min-width: 200px;
+    text-shadow: 1px 1px 1px rgb(5, 26, 84);
+}
+
+#description {
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-align: center;
+    min-width: 200px;
+    text-shadow: 1px 1px 1px rgb(5, 26, 84);
+}
+
+form {
+    background-color: #004f8c;
+    padding: 2em 1.5em;
+}
+
+.form-items {
+    display: block;
+    align-items: center;
+}
+
+button,
+textarea,
+select,
+input {
+    font-size: inherit;
+    min-height: 2em;
+    width: 100%;
+    margin: 0;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+    margin-top: 0.5em;
+}
+
+#name-label,
+#email-label,
+#age-label {
+    margin-bottom: 1em;
+}
+
+p {
+    margin: 1em 0.5em 0 0;
+}
+
+label {
+    display: block;
+    width: 100%;;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+textarea {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    resize: none;
+}
+
+#dropdown {
+  color: inherit;
+}
+
+button {
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+    align-items: center;
+    min-width: 200px;
+    border: none;
+    color: white;
+    background-color: #DC5F00;
+}
+
+button:hover {
+   background-color:  #FFA559;
+   cursor: pointer;
+}
+
+@media (max-width: 660px) {
+    form {
+        margin: 0 20px;
+    }
+}

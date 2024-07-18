@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank you for your partisipation in a survey</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-items">
+                <label id="name-label">Name <input id="name" type="text" name="name" placeholder="Enter your Name" required></label>
+                <label id="email-label">Email <input id="email" type="email" name="email" placeholder="Enter your Email" required></label>
+                <label id="number-label">Age <input id="number" type="number"name="age" max="100" min="15" placeholder="Age" required></label>
+            </div>
+            <div class="form-items">
+                <p>Select your country:</p>
+                <select id="dropdown" name="dropdown">
+                    <option value="">Country</option>
+                    <option value="1">United States</option>
+                    <option value="2">Canada</option>
+                    <option value="3">United Kingdom</option>
+                    <option value="4">Australia</option>
+                    <option value="5">Other...</option>
+                </select>
+            </div>
+            <div class="form-items">
+                <p>Do you have pet?</p>
+                <label for="yes-label"><input id="yes-label" class="inline" type="radio" name="yes/no-label" value="yes-label"> Yes</label>
+                <label for="no-label"><input id="no-label" class="inline" type="radio" name="yes/no-label" value="no-label"> No</label>
+            </div>
+            <div class="form-items">
+                <p>What pet do you have?</p>
+                <label for="cat"><input id="cat" class="inline" type="checkbox" name="cat" value="cat"> Cat</label>
+                <label for="dog"><input id="dog" class="inline" type="checkbox" name="dog" value="dog"> Dog</label>
+                <label for="bunny"><input id="bunny" class="inline" type="checkbox" name="bunny" value="reptile"> Bunny</label>
+                <label for="parrot"><input id="parrot" class="inline" type="checkbox" name="parrot" value="parrot"> Parrot</label>
+                <label for="hamster"><input id="hamster" class="inline" type="checkbox" name="hamster" value="hamster"> Hamster</label>
+                <label for="reptile"><input id="reptile" class="inline" type="checkbox" name="reptile" value="reptile"> Reptile</label>
+                <label form="other"><input id="other" class="inline" type="checkbox" name="other" value="other"> Other</label>
+            </div>
+            <div class="form-items">
+                <p id="pet-info">Tall us about your pet(s):</p>
+                <textarea id="pet-info" name="pat-info" cols="8" rows="8" placeholder="Type your text here..."></textarea>
+            </div>
+            <div class="form-items>">
+                <button id="submit" class="submit-button" type="submit" value="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
